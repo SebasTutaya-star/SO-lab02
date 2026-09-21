@@ -13,18 +13,18 @@ Se arrancó el núcleo xv6 emulado mediante QEMU y se realizaron pruebas del sis
 Arranque de xv6 y comandos de la Parte A
 
 Comandos Realizados:
-- "ls": Listado de archivos iniciales en xv6. ![alt text](parteA_1.png)
-- "echo Sebastian Tutaya": Salida estándar por consola.![alt text](parteA_2-1.png)
+- "ls": Listado de archivos iniciales en xv6. 
+- "echo Sebastian Tutaya": Salida estándar por consola.
 - "mkdir SO-2026": Creación de directorio invocando la syscall "sys_mkdir".
-- "ls": Verificación del nuevo directorio.![alt text](parteA_3-1.png)
-- "cat README": Lectura de archivo existente.![alt text](parteA_4.png)
-- "echo prueba de sistema de archivos > archivo.txt": Redirección y escritura mediante llamadas al sistema de archivos ("open", "write").![alt text](parteA_5.png)
-- "cat archivo.txt" y "wc archivo.txt": Lectura y conteo de líneas, palabras y bytes.![alt text](parteA_6.png)
+- "ls": Verificación del nuevo directorio.
+- "cat README": Lectura de archivo existente.
+- "echo prueba de sistema de archivos > archivo.txt": Redirección y escritura mediante llamadas al sistema de archivos ("open", "write").
+- "cat archivo.txt" y "wc archivo.txt": Lectura y conteo de líneas, palabras y bytes.
 
 ---
 
 ## 2. Inspección de llamadas al sistema (Parte C)
-![alt text](ParteC-1.png)
+
 Se localizaron la interfaz y la implementación para "fork" y "read":
 
 """text
